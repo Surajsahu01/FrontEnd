@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
 }
@@ -558,6 +558,7 @@ a{
     width: 50%;
     position: relative;
     gap: 2rem;
+    justify-content: center;
 }
 
 .skill-fade-text{
@@ -566,7 +567,55 @@ a{
     font-size: 7em;
     color:rgb(206, 205, 205);
     
-    bottom: -34.4%;
-    right: -15%;
+    bottom: -30%;
+    right: -10%;
     font-weight: bold;
+}
+
+.skill-logo{
+    width: 90px;
+    transition: all 0.5s;
+
+}
+.skill-logo:hover{
+    transform: scale(1.2);
+}
+
+.blob-style{
+    width: 300px;
+    position: absolute;
+    z-index: -5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blodAnimation 3s linear infinite;
+    filter: brightness(90%);
+}
+
+@keyframes blodAnimation{
+    50%{
+        top: 54%;
+        left: 46%;
+        
+    }
+}
+
+.skill-heading{
+    font-size: 45px;
+    font-weight: bold;
+    color: var(--bgOrange);
+    line-height: 50px;
+    
+}
+.caps{
+    font-size: 80px;
+}
+.skill-subheadlin{
+    margin: 0.1rem;
+    width: 90%;
+    text-align: justify;
+}
+
+.skill-subheadlin p{
+    margin:  15px 0;
 }

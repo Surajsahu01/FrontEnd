@@ -11,6 +11,9 @@
 :root{
     --bgOrange: #e84949;
 }
+.html{
+    scroll-behavior: smooth;
+}
 
 #wrapper{
     height: 100vh;
@@ -41,6 +44,7 @@
 .logo-text{
     margin-left: -1.2rem;
     font-size: 20px;
+    
 }
  
 .nav-item{
@@ -51,15 +55,17 @@
 
 .nav-item div a{
     color: black;
-
-}
-
-a{
     text-decoration: none;
+    transition: 0.6s;
+
 }
 
-.nav-item div:hover{
-    transition: 0.8s;
+/* a{
+    text-decoration: none;
+} */
+
+.nav-item div a:hover{
+    
     font-weight: bold;
 
 } 
@@ -618,4 +624,120 @@ a{
 
 .skill-subheadlin p{
     margin:  15px 0;
+}
+
+.contect-me-container{
+    width: 100%;
+    background-color: rgb(231,231,231);
+}
+
+
+.Contectus-heading{
+    font-size: 5em;
+    color: var(--bgOrange);
+    padding-top: 2rem;
+}
+
+.Contectus-subheading{
+    font-size: 3rem;
+    color: #343d68aa;
+    text-transform: capitalize;
+}
+
+.contactus-from{
+    margin-top: 25px;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.from{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    margin: 2rem 5rem;  
+}
+
+.form-filed-container{
+    width: 100%;
+}
+.formfield{
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500;
+    border: none;
+    margin-top: 27px;
+}
+
+.formfield-textarea{
+    height: auto;
+    padding-top: 1rem;
+}
+
+#submit-btn{
+    border: none;
+    font-size: 1.4rem ;
+    margin: 1rem 0;
+}
+
+#submit-btn:hover{
+    scale: 0.9;
+}
+
+.submit-icon{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+footer{
+    position: relative;
+    background-color: #343d68;
+    margin-top: -1px;
+    padding: 5rem;
+}
+.footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    position: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-faded-text{
+    position:absolute;
+    user-select:none;
+    font-size: 4em;
+    left: 0;
+    bottom: 0;
+    color: #535c87;
+
+}
+
+.link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+    margin-left: 6rem ;
+}
+
+.link-wrapper div a{
+    font-size: 20px;
+    color: white;
+    /* font-size: 25px; */
+    text-decoration: none;
+    transition: all 0.6s;
+}
+.link-wrapper div a:hover{
+    color: var(--bgOrange);
+}
+.icon-wrapper{
+    display: flex;
+    gap: 1.2rem;
+    
 }
